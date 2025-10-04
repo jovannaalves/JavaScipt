@@ -1,0 +1,57 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.cabecalho-zap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(58, 56, 56);
+    color: #fff;
+    padding: 20px;
+}
+.cabecalho-zap h1{
+    margin: 0;
+}
+.cabecalho-zap nav a{
+    color: rgba(62, 240, 39, 0.774);
+    text-decoration: none;
+    margin-left: 20px;
+}
+.links:hover{
+    color: rgba(34, 119, 23, 0.774);
+    text-decoration: underline;
+    cursor: help;
+}
+.conteudo-principal-zap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px; 
+}
+.caixa-conteudo{
+    background-color: #fdfdfd;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #694e4e; 
+    flex: 1 1 300px; /*1: sessao cresce até ocupat todo o espaço disponivel.
+    1: diminuir para ocupar todo o espaço disponivel. 
+    300px: define o tamando padrão dos elementos*/
+    text-align: left;
+}
+.botao{
+    background-color: rgba(68, 236, 46, 0.616);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.botao:hover{
+    background-color: rgba(34, 119, 23, 0.774);
+    transform: translateY(-1px); /*faz o botao ir pra cima*/
+    box-shadow: 0 4px 8px #969696;
+}

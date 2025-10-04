@@ -1,0 +1,86 @@
+/*Estilo gral para o corpo do site*/
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+/*cabeçalho*/
+/*estilos gerais do cabeçalho*/
+.cabecalho-site{
+    display: flex;/*permite que os elementos dentro de um container sejam organizados de forma flexivel permite ajustar o alinhamento e a distribução de espaço;*/
+    justify-content: space-between;
+    align-items: center; /*alinha os itens no centro vertical*/
+    background-color: #b38181; /*cor do plano de fundo*/
+    color: #fff; /*cor da fonte*/
+    padding: 20px; /*espaço interno entre o conteudo do elemento*/
+}
+.cabecalho-site h1{
+    margin: 0;
+}
+.cabecalho-site nav a{
+    color: #ffffff; 
+    text-decoration: none;
+    margin-left: 20px;
+}
+.links:hover{
+    color:#eeb4b4;
+    text-decoration: underline;
+    cursor: help;
+}
+/*conteudo principal*/
+/*estilos aplicados com conteudo principal do site*/
+.conteudo-principal{
+   display: flex;
+   flex-wrap: wrap; /*permite que as sessoes quebrem linha*/
+   justify-content: center;
+   gap: 20px; /*da espaços externos entre as sessões/containers*/
+   padding: 20px; /*espaços internos de uma sessão/container*/
+}
+.caixa-conteudo{
+    background-color: #b3818163;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #694e4e; 
+    flex: 1 1 300px; /*1: sessao cresce até ocupat todo o espaço disponivel.
+    1: diminuir para ocupar todo o espaço disponivel. 
+    300px: define o tamando padrão dos elementos*/
+    text-align: left;
+}
+.botao{
+    background-color: #c79797;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.botao:hover{
+    background-color: #a75f5f;
+    transform: translateY(-1px); /*faz o botao ir pra cima*/
+    box-shadow: 0 4px 8px #694e4e;
+}
+.rodape-site{
+    background-color: #b38181;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+    box-shadow: 0 4px 8px #694e4e;
+    color: #ffffff;
+}
+
+/*media query -> funciona como um "se, entao" para responsividade,
+de forma que: se o site tiver a dimensão x, ent algum ajuste será
+aplicado no layout para garantir a consistência e visibilidade
+das informções*/
+
+@media screen and (max-width: 580px) {
+    .cabecalho-site{
+        flex-direction: column; /*em telas menores o cabeçalho vai se empilhar*/
+        text-align: center;
+    }
+    .cabecalho-site nav{
+        margin-top: 10px;
+    }
+}

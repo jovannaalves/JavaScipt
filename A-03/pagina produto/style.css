@@ -1,0 +1,164 @@
+p{
+    color:#ffffff;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*reset basico da tela*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/*Aplicando estilos do cabeçalho*/
+.cabecalho-produto {
+    background-color: rgb(240, 157, 24);
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
+}
+.cabecalho-produto nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho-produto h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    color: rgb(167, 78, 0)
+}
+.cabecalho-produto a{
+    text-decoration: none; /*tira formatação de limk do html*/
+    color: inherit;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(167, 78, 0);
+}
+
+.cabecalho-produto ul{
+    list-style: none; /*tira a "bolinha" dos tópicos*/
+    display: flex;/*tranformar a lista em um container flexivel*/
+    gap: 20px; /*adiciona um espaço entre cada item da lista*/ 
+}
+/*estilo do layout principal e conteudo*/
+.conteudo-principal-produto{
+    display: flex;
+    flex-wrap: wrap; /*permite que as sessoes quebrem linha*/
+    justify-content: center;
+    gap: 30px; /*da espaços externos entre as sessões/containers*/
+    padding: 20px 0;/*ajuste o espaçamento entre o cabeçalho e o conteudo*/
+    text-align: justify;
+}
+.layout-produto{
+    flex: 1 1 300px;
+    display: flex;/*vai permitir que a gente consiga por uma barra lateral*/
+    gap: 50px;
+}
+.post-produto{
+    flex: 4;
+    background-color: #f1d391d0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 7px #ffa201;
+}
+.post-produto h2{
+    font-family: monospace;
+}
+.post-produto p{
+    color:#a35251b6;
+    font-size: medium;
+}
+.barra-lateral{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px #ff9501;
+}
+.barra-lateral a{
+    text-decoration:underline;
+    color: #e77e05;
+    font-family:'Times New Roman', Times, serif;
+}
+.barra-lateral ul{
+    list-style: none;
+}
+/* --- Estilo da tabela --- */
+table {
+    width: 100%;
+    border-collapse: collapse; /* une as bordas */
+    margin: 30px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 7px #ff9501;
+    border-radius: 10px;
+    overflow: hidden; /* arredonda bordas sem deixar falhas */
+}
+
+/* Cabeçalho */
+table thead {
+    background-color: rgb(240, 157, 24);
+    color: white;
+    text-align: left;
+}
+
+table th {
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Corpo da tabela */
+table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* Linhas alternadas */
+table tbody tr:nth-child(even) {
+    background-color: #f2f9fc;
+}
+
+/* Efeito hover */
+table tbody tr:hover {
+    background-color: #d9f1ff;
+    transition: 0.3s;
+}
+
+/* Deixa o primeiro item em destaque */
+table td:first-child {
+    font-weight: bold;
+    color: #5158a3;
+}
+
+.imagem-produto img{
+    width: 800px; /* Define a largura */
+    height: auto; /* Mantém a proporção original da imagem */
+    max-width: 90%; /* Para garantir responsividade em telas pequenas */
+    border-radius: 20px; /* Opcional: para deixar as bordas arredondadas */
+    display: flex; /* Para evitar espaços em branco abaixo da imagem */
+    margin: 0 auto; /* Centralizar a imagem */
+    margin-top: 50px;
+    box-shadow: 0 4px 30px #694e4e;
+}
+
+.rodape-produto{
+    text-align: center;
+    background-color:  rgb(240, 157, 24);
+    padding: 20px 0;
+    box-shadow: 2px solid #ddd;
+    color: rgb(8, 68, 68);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+}
+@media screen and (max-width: 400px) {
+    .cabecalho-produto{
+        flex-direction: column;
+        text-align: center;
+    }
+    .cabecalho-produto nav{
+        margin-top: 10px;
+    }
+}
