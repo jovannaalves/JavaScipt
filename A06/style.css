@@ -1,0 +1,72 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh; /*garante que o corpo tenha uma altura de 100% da janela de visualização,permitindo a centralização vertical*/
+}
+ .container{
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #5f5b5b; 
+    width: 350px;
+ }
+h1{
+    text-align: center;
+    color: rgba(88, 3, 3, 0.678);
+}
+.input-group{
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="email"]{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /*garante que o padding n aumente a largura total*/
+}
+
+input[type="password"]{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /*garante que o padding n aumente a largura total*/
+}
+
+button{
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(196, 202, 202);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font: 14px;
+    transition: backgrount-color 0.13, opacity 0.3;
+}
+button:hover:enabled{
+    background-color: #b30000d2;
+}
+/*estilo de validção (interação com a tela)*/
+.mensagem-status{
+    margin-top: 5px;
+    font-size: xx-small;
+    height: 1.2em; /*altura do texto*/
+}
+.erro{
+    color: red;
+    font-weight: bold;
+}
+.sucesso{
+    color: green;
+    font-weight: bold;
+}
